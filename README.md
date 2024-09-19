@@ -12,7 +12,7 @@ A React Native Expo TypeScript application that demonstrates a social media feed
 
 ## ScreenShot
 
-<img src="https://github.com/rugue/weather-app-ani/blob/master/Screenshot_1724254966.png?raw=true" alt="WeatherCard Screenshot" width="250"/>
+<img src="https://github.com/rugue/social-media-feed/blob/master/social-media-feed.png?raw=true" alt="Social Media Feed Screenshot" width="250"/>
 
 ## Prerequisites
 
