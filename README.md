@@ -10,6 +10,10 @@ A React Native Expo TypeScript application that demonstrates a social media feed
 - Error handling and loading states
 - TypeScript for improved type safety
 
+## ScreenShot
+
+<img src="https://github.com/rugue/weather-app-ani/blob/master/Screenshot_1724254966.png?raw=true" alt="WeatherCard Screenshot" width="250"/>
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
