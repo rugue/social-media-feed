@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# Social Media Feed App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native Expo TypeScript application that demonstrates a social media feed with infinite scrolling.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Display a feed of social media posts
+- Infinite scrolling to load more posts
+- Efficient rendering using FlatList
+- Error handling and loading states
+- TypeScript for improved type safety
 
-   ```bash
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js (v14 or later)
+- npm or yarn
+- Expo CLI (`npm install -g expo-cli`)
+
+## Installation
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/rugue/social-media-feed-app.git
+   cd social-media-feed-app
+   ```
+
+2. Install dependencies:
+   ```
    npm install
    ```
 
-2. Start the app
+## Running the App
 
-   ```bash
-    npx expo start
-   ```
+To start the development server:
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This will open the Expo DevTools in your browser. You can run the app on an iOS or Android simulator, or scan the QR code with the Expo Go app on your physical device.
 
-## Learn more
+## Project Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+project-root/
+├── app/
+│   ├── index.tsx         # Main feed screen
+│   └── _layout.tsx       # App layout
+├── components/
+│   ├── Post.tsx          # Individual post component
+│   └── ErrorMessage.tsx  # Error message component
+├── hooks/
+│   ├── usePosts.ts       # Custom hook for managing posts
+│   └── useInfiniteScroll.ts  # Custom hook for infinite scroll
+├── services/
+│   └── api.ts            # API service
+├── types/
+│   └── index.ts          # TypeScript type definitions
+├── utils/
+│   └── debounce.ts       # Utility function for debouncing
+├── package.json
+└── tsconfig.json
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Contributing
 
-## Join the community
+Contributions to the Social Media Feed App are welcome. Please follow these steps:
 
-Join our community of developers creating universal apps.
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some amazing feature'`)
+5. Push to the branch (`git push origin feature/amazing-feature`)
+6. Open a Pull Request
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Contact
+
+If you have any questions or feedback, please open an issue on the GitHub repository.
+
+Thank you for using or contributing to the Social Media Feed App!
